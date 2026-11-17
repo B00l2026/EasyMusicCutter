@@ -1,0 +1,25 @@
+# MusicCutter 4.0
+
+本地批量音频剪辑。支持逐首设定、一首多个片段、0.1 秒精度、自动恢复、可取消导出与持久日志。
+
+macOS 双击 `启动 MusicCutter.command`；Windows 双击 `启动 MusicCutter.bat`。
+
+```bash
+python3 music_cutter_gui.py
+python3 music_cutter_gui.py --self-check
+```
+
+运行需要 Python 3.10+（含 Tkinter）与 FFmpeg/FFprobe，试听额外需要 FFplay。Excel 兼容功能才需要 `requirements.txt` 的 openpyxl。
+
+[使用说明](使用说明.md) · [需求审查与验收](需求审查与验收.md) · [测试报告](测试报告.md) · [更新日志](更新日志.md)
+
+开发验证：
+
+```bash
+python3 -m unittest discover -s tests -v
+MUSICCUTTER_GUI_TESTS=1 python3 -m unittest discover -s tests -p test_gui_stress.py -v
+```
+
+第二条需要真实桌面会话。Windows 可先在终端设置 `MUSICCUTTER_GUI_TESTS=1` 再运行对应 unittest 命令。
+
+源码入口保持与 v3 兼容，重构前文件位于 `legacy/`。程序不清理原来的 `output` 或 `output2`。

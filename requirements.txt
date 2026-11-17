@@ -1,0 +1,2 @@
+# Only needed for legacy Excel import/export; normal editing uses the Python standard library.
+openpyxl>=3.1,<4

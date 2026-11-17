@@ -1,0 +1,4 @@
+可将 FFmpeg 可执行程序放入本文件夹（不同操作系统的可执行文件不同）。
+Windows: ffmpeg.exe / ffprobe.exe / ffplay.exe
+macOS / Linux: ffmpeg / ffprobe / ffplay（需有执行权限）
+也可以正常安装 FFmpeg 并将其加入 PATH，不必使用这个文件夹。
