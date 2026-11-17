@@ -1,4 +1,4 @@
-# MusicCutter 4.0
+# MusicCutter 1.0
 
 本地批量音频剪辑。支持逐首设定、一首多个片段、0.1 秒精度、自动恢复、可取消导出与持久日志。
 
@@ -21,5 +21,3 @@ MUSICCUTTER_GUI_TESTS=1 python3 -m unittest discover -s tests -p test_gui_stress
 ```
 
 第二条需要真实桌面会话。Windows 可先在终端设置 `MUSICCUTTER_GUI_TESTS=1` 再运行对应 unittest 命令。
-
-源码入口保持与 v3 兼容，重构前文件位于 `legacy/`。程序不清理原来的 `output` 或 `output2`。
