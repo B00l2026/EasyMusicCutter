@@ -11,13 +11,4 @@ python3 music_cutter_gui.py --self-check
 
 运行需要 Python 3.10+（含 Tkinter）与 FFmpeg/FFprobe，试听额外需要 FFplay。Excel 兼容功能才需要 `requirements.txt` 的 openpyxl。
 
-[使用说明](使用说明.md) · [需求审查与验收](需求审查与验收.md) · [测试报告](测试报告.md) · [更新日志](更新日志.md)
-
-开发验证：
-
-```bash
-python3 -m unittest discover -s tests -v
-MUSICCUTTER_GUI_TESTS=1 python3 -m unittest discover -s tests -p test_gui_stress.py -v
-```
-
-第二条需要真实桌面会话。Windows 可先在终端设置 `MUSICCUTTER_GUI_TESTS=1` 再运行对应 unittest 命令。
+[使用说明](使用说明.md)
